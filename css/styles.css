@@ -11875,3 +11875,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
 }
 /*  */
+
+
+
+.contactIcon:hover{
+  
+  background-color: var(--bs-pink) !important;
+  cursor: pointer;
+}
