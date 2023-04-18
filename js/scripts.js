@@ -80,10 +80,10 @@ async function writePhrase(phraseContainer, helloPhrases, speed) {
             phraseContainer.innerHTML = currentPhrase.substr(0, currentLetter);
 
             if (currentLetter == currentPhrase.length) {
-                delayCounter = 20;
+                delayCounter = 30;
             }
         }
     }, speed);
 }
 
-writePhrase(document.getElementById('result'), phrases, 100);
+writePhrase(document.getElementById('result'), phrases, 75);

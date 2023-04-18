@@ -11876,11 +11876,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 /*  */
 
-#result{
-  min-height: 13.5rem;
+#mainPhraseContainer{
+  min-height: 16.5rem;
   width: 100%;
   vertical-align: middle;
-  display: inline;
 }
 
 .contactIcon:hover{
