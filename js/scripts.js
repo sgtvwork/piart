@@ -1,11 +1,3 @@
-/*!
-* Start Bootstrap - Agency v7.0.11 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -25,23 +17,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Shrink the navbar 
     navbarShrink();
-
-    // Animation
-    var text = "Рекламно-производственные решения любой сложности";
-    var delay = 100; // cкорость
-    var elem = document.getElementById("result");
-     
-    var print_text = function(text, elem, delay) {
-        if(text.length > 0) {
-            elem.innerHTML += text[0];
-            setTimeout(
-                function() {
-                    print_text(text.slice(1), elem, delay); 
-                }, delay
-            );
-        }
-    }
-    print_text(text, elem, delay);
 
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
@@ -69,3 +44,46 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+//--------------------------------------------------------//
+
+
+var phrases =[
+    'Любой каприз за ваши деньги',
+    'Фотографируем как на паспорт, так и в нельзяграм',
+    'Барака Обаму не обслуживаем',
+    'Продам гараж',
+    'Вместо того, чтоб правки вносить - сидишь и читаешь этот текст',
+    'Не, ну серьезно',
+    'Рекламно-производственные решения любой сложности'
+]
+
+async function writePhrase(phraseContainer, helloPhrases, speed) {
+    let phraseIndex = 0;
+    let currentPhrase = helloPhrases[phraseIndex];
+    let currentLetter = 0;
+    let delayCounter = 20;
+
+    let typingInterval = setInterval(() => {
+        if (delayCounter > 0) {
+            delayCounter--;
+        }
+        else {
+            if (currentLetter > currentPhrase.length) {
+                phraseIndex = (phraseIndex + 1) % helloPhrases.length;
+                currentPhrase = helloPhrases[phraseIndex];
+                currentLetter = 0;
+            }
+
+            currentLetter++;
+            phraseContainer.innerHTML = currentPhrase.substr(0, currentLetter);
+
+            if (currentLetter == currentPhrase.length) {
+                delayCounter = 20;
+            }
+        }
+    }, speed);
+}
+
+writePhrase(document.getElementById('result'), phrases, 100);
