@@ -236,7 +236,7 @@ sup {
 }
 
 a {
-  color: #ffc800;
+  color: var(--bs-pink);
   text-decoration: underline;
 }
 a:hover {
@@ -3941,9 +3941,9 @@ textarea.form-control-lg {
 }
 
 .nav-link {
+  color: #000;
   display: block;
   padding: 0.5rem 1rem;
-  color: #ffc800;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -11779,9 +11779,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
  /* my code  */
  /* About company  */ 
-.ab_company {
-  padding: 0px;
-}
+
  .comp_1 {
   font-size: 2.5rem;
   padding: 12px 0;
@@ -11791,8 +11789,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   align-items: center;
 }
 
-.comp_2 {
-  text-align: center;
+.ab_company {
+  padding: 0px;
+}
+
+.section-heading {
+  margin-top: 16px !important;
 }
 
 .about_company {
@@ -11838,6 +11840,20 @@ section#contact form#contactForm :-ms-input-placeholder {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: var(--bs-pink);
 }
+
+/* Кнопка ИМ  */
+.btn-dropdown:focus {
+  box-shadow: none;
+}
+
+.dropdown-item:hover {
+  color: var(--bs-pink);
+}
+
+.dropdown-item:active {
+  color: var(--bs-black-rgb);
+  background-color: var(--bs-pink);
+}
 /*  */
 /* Main page */
 .btn-primary {
@@ -11874,6 +11890,27 @@ section#contact form#contactForm :-ms-input-placeholder {
 .card-body {
   text-align: center;
 }
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.nav-link:hover {
+  color: var(--bs-pink);
+}
+
+.accordion-button:not(.collapsed)::after {
+background-image: url(/assets/img/acordion.svg);
+}
+
+.accordion_li {
+  list-style-type: none;
+}
 /*  */
 
 #mainPhraseContainer{
@@ -11887,3 +11924,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: var(--bs-pink) !important;
   cursor: pointer;
 }
+
