@@ -11789,10 +11789,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   align-items: center;
 }
 
-.ab_company {
-  padding: 0px;
-}
-
 .section-heading {
   margin-top: 16px !important;
 }
@@ -11905,11 +11901,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .accordion-button:not(.collapsed)::after {
-background-image: url(/assets/img/acordion.svg);
+background-image: url(../assets/img/acordion.svg);
 }
 
 .accordion_li {
-  list-style-type: none;
+  list-style-type: none;  
+  text-align: left;
+
 }
 /*  */
 
