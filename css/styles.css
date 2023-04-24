@@ -11410,7 +11410,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/header-bg-1.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11908,6 +11908,10 @@ background-image: url(../assets/img/acordion.svg);
   list-style-type: none;  
   text-align: left;
 
+}
+
+.card-img-top {
+  max-height: 276px;
 }
 /*  */
 
