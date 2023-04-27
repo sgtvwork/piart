@@ -11913,6 +11913,12 @@ background-image: url(../assets/img/acordion.svg);
 .card-img-top {
   max-height: 276px;
 }
+
+.card-title_local {
+  min-height: 48px;
+  position: relative;
+  top: 10px;
+}
 /*  */
 
 #mainPhraseContainer{
