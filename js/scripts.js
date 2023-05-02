@@ -82,3 +82,31 @@ async function writePhrase(phraseContainer, helloPhrases, speed) {
 }
 
 writePhrase(document.getElementById('result'), phrases, 75);
+
+const modalInfo = [
+    {
+        id: 0,
+        header: 'Ошибка загрузки данных',
+        text: 'Все виновные в ошибке уже уволены, как новый специалист будет найден мы обязательно все починим.',
+        imageSrc: 'assets/img/modal/0.jpg'
+    }
+]
+
+function openModal(modalInfoId){
+    
+    var header = document.getElementById('ModalHeader');
+    var img = document.getElementById('ModalImage');
+    var text = document.getElementById('ModalText');
+    var info = modalInfo.find(x=>x.id == modalInfoId);
+    var modal = new bootstrap.Modal(document.getElementById('portfolioModal'));
+
+    if(info == undefined){
+        info = modalInfo.find(x=>x.id == 0);
+    }
+    
+    header.innerText = info.header;
+    img.src = info.imageSrc;
+    text.innerText = info.text;
+
+    modal.show();
+}
