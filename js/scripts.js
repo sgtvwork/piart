@@ -88,13 +88,22 @@ const modalInfo = [
         id: 0,
         header: 'Ошибка загрузки данных',
         text: 'Все виновные в ошибке уже уволены, как новый специалист будет найден мы обязательно все починим.',
-        imageSrc: 'assets/img/modal/0.jpg'
+        images: ['assets/img/modal/0.jpg']
     },
     {
         id: 1,
         header: 'Страница находится в разработке',
         text: 'Страница еще не готова, как будет готова она появится тут.',
-        imageSrc: 'assets/img/modal/1.jpg'
+        images: ['assets/img/modal/1.jpg']
+    },
+    {
+        id: -1,
+        header: 'Страница находится в разработке',
+        text: 'Страница еще не готова, как будет готова она появится тут.',
+        images: [
+            'assets/img/modal/0.jpg',
+            'assets/img/modal/1.jpg'
+        ]
     }
 ]
 
@@ -111,7 +120,7 @@ function openModal(modalInfoId){
     }
     
     header.innerText = info.header;
-    img.src = info.imageSrc;
+    img.src = info.images[0];
     text.innerText = info.text;
 
     modal.show();
