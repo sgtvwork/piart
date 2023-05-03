@@ -11942,3 +11942,8 @@ background-image: url(../assets/img/acordion.svg);
   background-color: var(--bs-pink) !important;
   cursor: pointer;
 }
+
+.zz_1, .zz_2 {
+  font-size: 3.25rem;
+  line-height: 3.5rem;
+}
