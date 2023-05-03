@@ -11704,11 +11704,7 @@ header.masthead .masthead-heading {
   margin-bottom: 3rem;
   text-align: center;
 }
-.team-member img {
-  width: 14rem;
-  height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
-}
+
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
@@ -11946,4 +11942,22 @@ background-image: url(../assets/img/acordion.svg);
 .zz_1, .zz_2 {
   font-size: 3.25rem;
   line-height: 3.5rem;
+}
+
+.partnerCompanyLogo{
+  width: 15rem;
+  height: 15rem;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center; 
+  overflow: hidden;
+  display: flex;
+  margin: auto;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.partnerCompanyLogo img{
+  width: 12rem;
+  height: auto;
+  margin: auto;
 }
