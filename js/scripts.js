@@ -81,7 +81,7 @@ async function writePhrase(phraseContainer, helloPhrases, speed) {
     }, speed);
 }
 
-writePhrase(document.getElementById('result'), phrases, 75);
+//writePhrase(document.getElementById('result'), phrases, 75);
 
 const modalInfo = [
     {
