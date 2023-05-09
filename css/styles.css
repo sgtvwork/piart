@@ -11874,7 +11874,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .btn-primary {
   position: relative;
-  left: 87px;
   color: #fff;
   background-color: var(--bs-pink);
   border-color: var(--bs-pink);
@@ -12018,6 +12017,12 @@ background-image: url(../assets/img/acordion.svg);
 /* footer */
 .footer-col {
   padding: 0px;
+  margin-right: 15px;
+}
+
+.footer-col_razrab {
+  margin-left: 15px;
+  margin-right: 0;
 }
 
 .footer-col_company {
@@ -12044,11 +12049,12 @@ background-image: url(../assets/img/acordion.svg);
 
 .h6-footer {
   margin: 0px;
+  padding-bottom: 5px;
 }
 
 .footer-img{
-  max-width: 50px;
-  height: 50px;
+  max-width: 30px;
+  height: 30px;
 }
 
 .organization {
@@ -12073,11 +12079,18 @@ background-image: url(../assets/img/acordion.svg);
   color: var(--bs-pink);
 }
 
-.footer-col_link_4 {
-  margin-left: 10px;
+.h6-footer_social {
+  margin-left: -34px;
 }
 
+.footer-social {
+  margin-left: -43px;
+}
 .footer-col_link_6 {
-  margin-left: 46px;
+  margin-left: 44px;
+}
+
+.footer-col_link_4 {
+  margin-left: 7px;
 }
 /*  */
