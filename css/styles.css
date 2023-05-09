@@ -11409,7 +11409,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg-1.jpg");
+  background-image: url("../assets/img/header_logo.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11801,6 +11801,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 /*  */
 /* header  */
+
 #mainNav .navbar-brand {
   color: #fff;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11843,7 +11844,37 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 /*  */
 /* Main page */
+.masthead-heading-col {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.masthead-heading-col_1 {
+  max-width: 750px;
+  text-align: left;
+}
+
+.masthead-heading-col_2 {
+  position: relative;
+  bottom: 36px;
+  padding: 0;
+  height: 260px;
+  width: 125px;
+  border-right: var(--bs-pink) solid;
+}
+
+.masthead-heading-col_3 {
+  max-width: 750px;
+  text-align: right;
+}
+
+.dflex{
+  display: flex;
+}
+
 .btn-primary {
+  position: relative;
+  left: 87px;
   color: #fff;
   background-color: var(--bs-pink);
   border-color: var(--bs-pink);
@@ -11934,11 +11965,6 @@ background-image: url(../assets/img/acordion.svg);
   cursor: pointer;
 }
 
-.zz_1, .zz_2 {
-  font-size: 3.25rem;
-  line-height: 3.5rem;
-}
-
 .partnerCompanyLogo{
   width: 15rem;
   height: 15rem;
@@ -11988,3 +12014,70 @@ background-image: url(../assets/img/acordion.svg);
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
 }
+
+/* footer */
+.footer-col {
+  padding: 0px;
+}
+
+.footer-col_company {
+  max-width: 220px;
+}
+
+.footer-contacts_link {
+  text-decoration: none;
+  color: rgba(33, 37, 41);
+}
+
+.footer-contacts_link:hover {
+  color: var(--bs-pink);
+}
+
+.footer-contacts_p {
+  margin: 0px;
+}
+
+.footer-contacts_adress {
+  margin-bottom: 4px;
+  line-height: 2;
+}
+
+.h6-footer {
+  margin: 0px;
+}
+
+.footer-img{
+  max-width: 50px;
+  height: 50px;
+}
+
+.organization {
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.footer-logo_text {
+  color: black;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-col_link {
+  text-decoration: none;
+  color: rgba(33, 37, 41);
+}
+
+.footer-col_link:hover {
+  color: var(--bs-pink);
+}
+
+.footer-col_link_4 {
+  margin-left: 10px;
+}
+
+.footer-col_link_6 {
+  margin-left: 46px;
+}
+/*  */
