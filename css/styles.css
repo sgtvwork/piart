@@ -11860,6 +11860,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .masthead-heading-col_1::after{
   content: " ";
   background: rgb(255, 0, 136);
+  border-radius: 1000px;
   width: 5px;
   height: 260px;
   top: -42px;
