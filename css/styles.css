@@ -11811,8 +11811,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 #mainNav .navbar-brand img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 50px;
+  position: relative;
+  bottom: 5px;
   margin-right: 5px;
 }
 
@@ -11822,12 +11824,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: #212529;
 }
 #mainNav.navbar-shrink .navbar-brand img {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 50px;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: var(--bs-pink);
+}
+
+.navbar-logotip {
+  font-weight: 600;
 }
 
 /* Кнопка ИМ  */
